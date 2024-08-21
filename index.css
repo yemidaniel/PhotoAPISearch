@@ -1,0 +1,222 @@
+
+body {
+    text-align: center;
+    font-family: plusjakartasans, -apple-system, blinkmacsystemfont, "Segoe UI", Roboto, Oxygen, Cantarell, "Helvetica Neue", Ubuntu, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.photo-divs {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+}
+
+.photo-div {
+    position: relative;
+    display: flex;
+    margin: 10px 10px;
+}
+
+.photographer {
+    position: absolute;
+    display: none;
+    font-weight: 500;
+    color: white;
+    margin-left: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.photo-div:hover .photographer {
+    display: flex;
+    align-self:flex-end;
+    padding-bottom: 20px;
+}
+
+.photo-div img {
+    width: 100%;
+}
+
+h2 {
+    width: 90%;
+    text-align: left;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.nav {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-left: 25px;
+}
+
+.nav div {
+    margin: 10px;
+    border-radius: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 22px;
+    padding-right: 22px;
+    font-weight: 500;
+    color: rgb(77, 74, 74);
+}
+
+.nav .home { 
+    background-color: black;
+    color: white;
+}
+
+.nav div:hover {
+    cursor: pointer;
+}
+
+.top-menu {
+    display: flex;
+    align-items: center;
+    font-weight:600;
+    font-size: 17px;
+}
+
+.home-logo {
+    margin: 14px;
+    width: 55px;
+    border-radius: 10px;
+}
+
+.home-logo-text {
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+}
+
+.top-menu-item {
+    display: flex;
+    align-items: center;
+    margin: 12px;
+}
+
+.top-menu-item:hover, .home-logo:hover, .home-logo-text:hover, #search-form img:hover {
+    cursor: pointer;
+}
+
+.top-section {
+    color: rgb(255, 255, 255);
+    height: 500px;
+    position: relative;
+}
+
+.backgroung-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+    z-index: -1;
+}
+
+h1 {
+    font-size: 33px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 140px;
+}
+
+#search-bar {
+    min-width: 80%;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    padding-left: 110px;
+    padding-right: 50px;
+    box-sizing: border-box;
+    font-size: 18px;
+    color: grey;
+}
+
+.account-menu {
+    background-color: purple;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+}
+
+.account-menu-down-arrow {
+    width: 15px;
+    margin-left: 0;
+}
+
+
+.notification-icon {
+    width: 24px;
+}
+
+.upload-menu {
+    background-color: rgb(5, 160, 129);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 10px;
+}
+
+.menu-icon {
+    width: 26px;
+    margin-right: 35px;
+}
+
+.explore-menu {
+    margin-right: 5px;
+}
+
+#search-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-button {
+    width: 50px;
+    height: 50px;
+    background: url('img/search.png') no-repeat center center;
+    background-size: 24px;
+    border: none;
+    cursor: pointer;
+    margin-left: -55px;
+}
+
+.media-type-btn {
+    height: 35px;
+    border-radius: 10px;
+    margin-right: -98px;
+    z-index: 1;
+    border: none;
+    background-color: lightgrey;
+    width: 95px;
+}
+
+.lg {
+    display: none;
+}
+
+@media only screen and (min-width: 992px) {
+
+    .menu-icon {
+        display: none;
+    }
+
+    .lg {
+        display: block;
+    }
+}
